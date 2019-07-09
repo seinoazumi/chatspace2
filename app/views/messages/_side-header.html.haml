@@ -1,5 +1,5 @@
 .side-header
-  %p.side-header__user-name たぬき
+  %p.side-header__user-name= current_user.name
   %ul.user-menu
     %li.user-menu__new-group
       %a{:href => "/groups/new"}
