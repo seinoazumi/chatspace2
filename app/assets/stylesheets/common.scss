@@ -17,3 +17,14 @@ a{
     color: inherit;
   }
 }
+
+.flash-box{
+  text-align: center;
+  color: $white;
+  .alert{
+    background-color: orange;
+  }
+  .notice{
+    background-color: $aqua;
+  }
+}
