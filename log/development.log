@@ -2523,3 +2523,22 @@ FOREIGN KEY (`group_id`)
   ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
   [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+Started GET "/" for ::1 at 2019-07-11 21:48:08 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.1ms)
+  Rendered messages/_side-header.html.haml (3.1ms)
+  Rendered messages/_group.html.haml (2.1ms)
+  Rendered messages/_main-header.html.haml (2.4ms)
+  Rendered messages/_message.html.haml (1.9ms)
+  Rendered messages/_form.html.haml (4.7ms)
+  Rendered messages/index.html.haml within layouts/application (24.9ms)
+Completed 200 OK in 61ms (Views: 45.8ms | ActiveRecord: 2.2ms)
+
+
