@@ -2628,3 +2628,59 @@ Processing by GroupsController#new as HTML
 Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/groups/new" for ::1 at 2019-07-12 16:00:26 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/new.html.haml within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/azumi/projects/chatspace2/app/views/groups/new.html.haml:11: syntax error, unexpected tSTRING_BEG, expecting ')'
+...me, 'グループ名', :class 'chat-group-form__label'
+...                               ^):
+  
+app/views/groups/new.html.haml:11: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/groups/new" for ::1 at 2019-07-12 16:01:00 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/new.html.haml within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/azumi/projects/chatspace2/app/views/groups/new.html.haml:11: syntax error, unexpected tSTRING_BEG, expecting ')'
+... :chat_group_name, '', :class 'chat-group-form__label'
+...                               ^):
+  
+app/views/groups/new.html.haml:11: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/groups/new" for ::1 at 2019-07-12 16:02:05 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/new.html.haml within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/azumi/projects/chatspace2/app/views/groups/new.html.haml:11: syntax error, unexpected '=', expecting ')'
+...me, 'グループ名', :class = 'chat-group-form__label'
+...                               ^):
+  
+app/views/groups/new.html.haml:11: syntax error, unexpected '=', expecting ')'
+Started GET "/groups/new" for ::1 at 2019-07-12 16:02:31 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/new.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.3ms)
+
+
