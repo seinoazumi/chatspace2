@@ -2542,3 +2542,89 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 61ms (Views: 45.8ms | ActiveRecord: 2.2ms)
 
 
+Started GET "/" for ::1 at 2019-07-12 15:31:25 +0900
+  [1m[35m (7.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.7ms)
+  Rendered messages/_side-header.html.haml (2.8ms)
+  Rendered messages/_group.html.haml (1.6ms)
+  Rendered messages/_main-header.html.haml (2.5ms)
+  Rendered messages/_message.html.haml (2.5ms)
+  Rendered messages/_form.html.haml (4.2ms)
+  Rendered messages/index.html.haml within layouts/application (37.4ms)
+Completed 200 OK in 440ms (Views: 405.7ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/groups/462/edit" for ::1 at 2019-07-12 15:31:27 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"462"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/edit.html.haml within layouts/application
+  Rendered groups/edit.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-07-12 15:38:21 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-12 15:47:15 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.3ms)
+  Rendered messages/_side-header.html.haml (2.8ms)
+  Rendered messages/_group.html.haml (2.8ms)
+  Rendered messages/_main-header.html.haml (3.3ms)
+  Rendered messages/_message.html.haml (2.0ms)
+  Rendered messages/_form.html.haml (4.9ms)
+  Rendered messages/index.html.haml within layouts/application (28.6ms)
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups/new" for ::1 at 2019-07-12 15:47:18 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/new.html.haml within layouts/application (216.3ms)
+Completed 500 Internal Server Error in 227ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_chat_group' for #<#<Class:0x007f9d6d41dea0>:0x007f9d702e3a78>
+Did you mean?  new_group_path):
+    1: .chat-group-form
+    2:   %h1 新規チャットグループ
+    3:   =form_with model: @group, id: new_chat_group, class: new_chat_group do |f| 
+    4:     .chat-group-form__errors
+    5:       %h2
+    6:         1件のエラーが発生しました。
+  
+app/views/groups/new.html.haml:3:in `_app_views_groups_new_html_haml___1663509292893195352_70157084345500'
+Started GET "/groups/new" for ::1 at 2019-07-12 15:49:16 +0900
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/new.html.haml within layouts/application
+  Rendered groups/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
