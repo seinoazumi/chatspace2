@@ -6422,3 +6422,78 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 81ms (Views: 58.5ms | ActiveRecord: 6.5ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('2456269710089556690', 0)[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+Migrating to AddColumnToMessages (20190714065942)
+  [1m[35m (3.2ms)[0m  [1m[35mALTER TABLE `message` ADD `group_id` bigint[0m
+  ↳ db/migrate/20190714065942_add_column_to_messages.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2456269710089556690')[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('2456269710089556690', 0)[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+Migrating to AddColumnToMessages (20190714065942)
+  [1m[35m (15.1ms)[0m  [1m[35mALTER TABLE `messages` ADD `group_id` bigint[0m
+  ↳ db/migrate/20190714065942_add_column_to_messages.rb:3
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE  INDEX `index_messages_on_group_id`  ON `messages` (`group_id`) [0m
+  ↳ db/migrate/20190714065942_add_column_to_messages.rb:3
+  [1m[35m (13.9ms)[0m  [1m[35mALTER TABLE `messages` ADD CONSTRAINT `fk_rails_841b0ae6ac`
+FOREIGN KEY (`group_id`)
+  REFERENCES `groups` (`id`)
+[0m
+  ↳ db/migrate/20190714065942_add_column_to_messages.rb:3
+  [1m[35m (10.8ms)[0m  [1m[35mALTER TABLE `messages` ADD `user_id` bigint[0m
+  ↳ db/migrate/20190714065942_add_column_to_messages.rb:4
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE  INDEX `index_messages_on_user_id`  ON `messages` (`user_id`) [0m
+  ↳ db/migrate/20190714065942_add_column_to_messages.rb:4
+  [1m[35m (14.3ms)[0m  [1m[35mALTER TABLE `messages` ADD CONSTRAINT `fk_rails_273a25a7a6`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  ↳ db/migrate/20190714065942_add_column_to_messages.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190714065942')[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('2456269710089556690')[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/bin/rake:23
+Started GET "/" for ::1 at 2019-07-14 16:16:11 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.5ms)
+  Rendered groups/_side-header.html.haml (3.4ms)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (2.6ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (2.7ms)
+  Rendered groups/_message.html.haml (2.9ms)
+  Rendered groups/_form.html.haml (7.7ms)
+  Rendered groups/index.html.haml within layouts/application (57.8ms)
+Completed 200 OK in 372ms (Views: 340.9ms | ActiveRecord: 5.4ms)
+
+
