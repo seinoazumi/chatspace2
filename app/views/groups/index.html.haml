@@ -4,7 +4,9 @@
   .chat-side
     = render 'side-header'
     .groups
-      =render 'group'
+      - current_user.groups.each do |group|
+        =render 'group', group: group
+        
       
   .chat-main
     = render 'main-header'
