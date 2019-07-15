@@ -6497,3 +6497,1036 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 372ms (Views: 340.9ms | ActiveRecord: 5.4ms)
 
 
+Started GET "/" for ::1 at 2019-07-14 20:37:12 +0900
+  [1m[35m (7.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.7ms)
+  Rendered groups/_side-header.html.haml (3.6ms)
+  [1m[36mGroup Load (4.1ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (4.2ms)
+  Rendered groups/_group.html.haml (0.5ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_main-header.html.haml (5.3ms)
+  Rendered groups/_message.html.haml (5.5ms)
+  Rendered groups/_form.html.haml (7.9ms)
+  Rendered groups/index.html.haml within layouts/application (107.5ms)
+Completed 200 OK in 457ms (Views: 395.3ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-14 20:41:55 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.0ms)
+  Rendered groups/_side-header.html.haml (2.8ms)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (2.9ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (2.2ms)
+  Rendered groups/_message.html.haml (1.6ms)
+  Rendered groups/_form.html.haml (5.2ms)
+  Rendered groups/index.html.haml within layouts/application (39.7ms)
+Completed 200 OK in 76ms (Views: 54.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-14 20:41:57 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.3ms)
+  Rendered groups/_side-header.html.haml (2.7ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (3.0ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_main-header.html.haml (2.6ms)
+  Rendered groups/_message.html.haml (1.8ms)
+  Rendered groups/_form.html.haml (3.7ms)
+  Rendered groups/index.html.haml within layouts/application (30.5ms)
+Completed 200 OK in 53ms (Views: 48.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-14 20:43:09 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.2ms)
+  Rendered groups/_side-header.html.haml (2.5ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (1.8ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_main-header.html.haml (2.5ms)
+  Rendered groups/_message.html.haml (1.8ms)
+  Rendered groups/_form.html.haml (2.5ms)
+  Rendered groups/index.html.haml within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/azumi/projects/chatspace2/app/views/groups/_form.html.haml:8: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/groups/_form.html.haml:8: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/groups/index.html.haml:18:in `_app_views_groups_index_html_haml__2814485333319577349_70266407504260'
+Started GET "/" for ::1 at 2019-07-14 20:43:31 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.2ms)
+  Rendered groups/_side-header.html.haml (3.6ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (2.1ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (2.5ms)
+  Rendered groups/_message.html.haml (1.9ms)
+  Rendered groups/_form.html.haml (4.7ms)
+  Rendered groups/index.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-14 20:45:57 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.4ms)
+  Rendered groups/_side-header.html.haml (2.6ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (1.9ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_main-header.html.haml (2.8ms)
+  Rendered groups/_message.html.haml (1.8ms)
+  Rendered groups/_form.html.haml (8.7ms)
+  Rendered groups/index.html.haml within layouts/application (34.3ms)
+Completed 200 OK in 56ms (Views: 51.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-14 20:48:45 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.3ms)
+  Rendered groups/_side-header.html.haml (2.6ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (1.8ms)
+  Rendered groups/_group.html.haml (0.3ms)
+  Rendered groups/_group.html.haml (0.3ms)
+  Rendered groups/_main-header.html.haml (2.8ms)
+  Rendered groups/_message.html.haml (1.8ms)
+  Rendered groups/_form.html.haml (2.4ms)
+  Rendered groups/index.html.haml within layouts/application (29.1ms)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/" for ::1 at 2019-07-14 20:49:53 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-07-14 20:50:23 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.8ms)
+  Rendered groups/_side-header.html.haml (3.6ms)
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (3.0ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (3.8ms)
+  Rendered groups/_message.html.haml (2.9ms)
+  Rendered groups/_form.html.haml (3.6ms)
+  Rendered groups/index.html.haml within layouts/application (36.4ms)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/" for ::1 at 2019-07-14 20:50:30 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-07-14 20:55:58 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.1ms)
+  Rendered groups/_side-header.html.haml (2.3ms)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (1.7ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (2.1ms)
+  Rendered groups/_message.html.haml (2.5ms)
+  Rendered groups/_form.html.haml (2.8ms)
+  Rendered groups/index.html.haml within layouts/application (39.9ms)
+Completed 200 OK in 77ms (Views: 55.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-14 20:57:05 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (0.9ms)
+  Rendered groups/_side-header.html.haml (2.0ms)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (2.3ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (2.3ms)
+  Rendered groups/_message.html.haml (1.7ms)
+  Rendered groups/_form.html.haml (2.3ms)
+  Rendered groups/index.html.haml within layouts/application (35.1ms)
+Completed 200 OK in 69ms (Views: 46.9ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/" for ::1 at 2019-07-14 20:57:57 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/" for ::1 at 2019-07-14 21:00:00 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/" for ::1 at 2019-07-14 21:02:41 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/" for ::1 at 2019-07-14 21:04:17 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:06:59 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 17ms (ActiveRecord: 3.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Group without an ID):
+  
+app/controllers/messages_controller.rb:16:in `set_group'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:07:24 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:16
+Completed 406 Not Acceptable in 181ms (ActiveRecord: 4.3ms)
+
+
+  
+ActionController::UnknownFormat (MessagesController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:08:01 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:18
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 4.3ms)
+
+
+  
+SyntaxError (compile error):
+  
+app/controllers/messages_controller.rb:5:in `index'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:09:15 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:19
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 4.2ms)
+
+
+  
+LoadError (Unable to autoload constant Message, expected /Users/azumi/projects/chatspace2/app/models/message.rb to define it):
+  
+app/controllers/messages_controller.rb:5:in `index'
+Started GET "/" for ::1 at 2019-07-14 21:10:02 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.9ms)
+  Rendered groups/_side-header.html.haml (3.6ms)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (2.8ms)
+  Rendered groups/_group.html.haml (0.2ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (2.8ms)
+  Rendered groups/_message.html.haml (1.8ms)
+  Rendered groups/_form.html.haml (5.8ms)
+  Rendered groups/index.html.haml within layouts/application (44.6ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    1: =form_with model: [@group, @message], id:"new_message", class: "new-message", local: true do |f| 
+    2:   .input-box
+    3:     =f.text_field :text, id: "message_content", class: "input-box__text", placeholder: "type a message"
+    4:     =f.label :message_image, class: "image-label" do
+  
+app/views/groups/_form.html.haml:1:in `_app_views_groups__form_html_haml___854397565469097545_70266414872880'
+app/views/groups/index.html.haml:18:in `_app_views_groups_index_html_haml__2814485333319577349_70266396801280'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:10:24 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:19
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.7ms)
+
+
+  
+LoadError (Unable to autoload constant Message, expected /Users/azumi/projects/chatspace2/app/models/message.rb to define it):
+  
+app/controllers/messages_controller.rb:5:in `index'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:11:51 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:19
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+LoadError (Unable to autoload constant Message, expected /Users/azumi/projects/chatspace2/app/models/message.rb to define it):
+  
+app/controllers/messages_controller.rb:5:in `index'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:14:30 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:20
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.7ms)
+
+
+  
+LoadError (Unable to autoload constant Message, expected /Users/azumi/projects/chatspace2/app/models/message.rb to define it):
+  
+app/controllers/messages_controller.rb:5:in `index'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:14:43 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:21
+Completed 500 Internal Server Error in 43902ms (ActiveRecord: 4.0ms)
+
+
+  
+LoadError (Unable to autoload constant Message, expected /Users/azumi/projects/chatspace2/app/models/message.rb to define it):
+  
+app/controllers/messages_controller.rb:6:in `index'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:15:38 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:17
+Completed 406 Not Acceptable in 184ms (ActiveRecord: 4.3ms)
+
+
+  
+ActionController::UnknownFormat (MessagesController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:16:51 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:17
+Completed 406 Not Acceptable in 165ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::UnknownFormat (MessagesController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-07-14 21:17:02 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.6ms)
+  Rendered groups/_side-header.html.haml (3.6ms)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (2.0ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (2.6ms)
+  Rendered groups/_message.html.haml (2.3ms)
+  Rendered groups/_form.html.haml (4.8ms)
+  Rendered groups/index.html.haml within layouts/application (43.5ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 4.3ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    1: =form_with model: [@group, @message], id:"new_message", class: "new-message", local: true do |f| 
+    2:   .input-box
+    3:     =f.text_field :text, id: "message_content", class: "input-box__text", placeholder: "type a message"
+    4:     =f.label :message_image, class: "image-label" do
+  
+app/views/groups/_form.html.haml:1:in `_app_views_groups__form_html_haml___854397565469097545_70266316547960'
+app/views/groups/index.html.haml:18:in `_app_views_groups_index_html_haml__2814485333319577349_70266368051980'
+Started GET "/" for ::1 at 2019-07-14 21:20:10 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.1ms)
+  Rendered groups/_side-header.html.haml (2.4ms)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 3[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered groups/_group.html.haml (2.1ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_group.html.haml (0.1ms)
+  Rendered groups/_main-header.html.haml (2.3ms)
+  Rendered groups/_message.html.haml (1.8ms)
+  Rendered groups/_form.html.haml (3.4ms)
+  Rendered groups/index.html.haml within layouts/application (39.5ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 6.4ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    1: =form_with model: [@group, @message], id:"new_message", class: "new-message", local: true do |f| 
+    2:   .input-box
+    3:     =f.text_field :text, id: "message_content", class: "input-box__text", placeholder: "type a message"
+    4:     =f.label :message_image, class: "image-label" do
+  
+app/views/groups/_form.html.haml:1:in `_app_views_groups__form_html_haml___854397565469097545_70266402246920'
+app/views/groups/index.html.haml:18:in `_app_views_groups_index_html_haml__2814485333319577349_70266414066940'
+Started GET "/groups/1/edit" for ::1 at 2019-07-14 21:20:17 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:40
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/groups/edit.html.haml:31
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `users`.`id` FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/groups/edit.html.haml:32
+  Rendered groups/edit.html.haml within layouts/application (95.8ms)
+Completed 200 OK in 122ms (Views: 114.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:20:23 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:17
+Completed 406 Not Acceptable in 164ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::UnknownFormat (MessagesController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:21:00 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:18
+Completed 406 Not Acceptable in 197ms (ActiveRecord: 6.0ms)
+
+
+  
+ActionController::UnknownFormat (MessagesController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/groups/1/messages" for ::1 at 2019-07-14 21:24:57 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:18
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
