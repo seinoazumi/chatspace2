@@ -2,17 +2,10 @@
   =render 'shared/flash'
 .wrapper
   .chat-side
-    = render 'side-header'
+    = render 'shared/side-header'
     .groups
       - current_user.groups.each do |group|
-        =render 'group', group: group
+        =render 'shared/group', group: group
         
       
   .chat-main
-    = render 'main-header'
-
-    .messages
-      = render 'message'
-      
-    .form
-      =render 'form'

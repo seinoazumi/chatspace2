@@ -1,0 +1,24 @@
+.flash-box
+  =render 'shared/flash'
+.wrapper
+  .chat-side
+    = render 'shared/side-header'
+    .groups
+      - current_user.groups.each do |group|
+        =render 'shared/group', group: group
+        
+      
+  .chat-main
+    = render 'main-header'
+
+    .messages
+      = render 'message'
+      
+    .form
+      =form_with model: [@group, @message], id:"new_message", class: "new-message", local: true do |f| 
+        .input-box
+          =f.text_field :text, id: "message_content", class: "input-box__text", placeholder: "type a message"
+          =f.label :message_image, class: "image-label" do
+            %i.fa.fa-image
+            = f.file_field :image, id:"message_image", class: "image-label__input"
+        = f.submit "Send", class: "new-message__submit-btn"

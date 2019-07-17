@@ -2,6 +2,8 @@ class GroupsController < ApplicationController
   before_action :set_group, only: [:edit, :update]
   def index
     @groups = Group.all
+    @messages = @groups[0].messages
+
   end
 
   def new
