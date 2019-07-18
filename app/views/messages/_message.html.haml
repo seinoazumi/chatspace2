@@ -1,5 +1,6 @@
 .message{"data-message_id" => "1286"}
   .upper-info
-    %p.upper-info__user あずみ
-    %p.upper-info__date 2019/04/17(Wed) 14:48:58
-  %p.message__text send
+    %p.upper-info__user=message.user.name
+    %p.upper-info__date=message.created_at
+  
+  %p.message__text message
