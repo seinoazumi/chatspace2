@@ -8773,3 +8773,231 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 64ms (Views: 58.4ms | ActiveRecord: 1.9ms)
 
 
+Started GET "/" for ::1 at 2019-07-18 20:17:16 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  ↳ app/controllers/groups_controller.rb:5
+  Rendering groups/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.8ms)
+  Rendered shared/_side-header.html.haml (4.2ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/groups/index.html.haml:7
+  Rendered shared/_group.html.haml (2.2ms)
+  Rendered shared/_group.html.haml (0.3ms)
+  Rendered groups/index.html.haml within layouts/application (20.1ms)
+Completed 200 OK in 57ms (Views: 50.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/1/messages" for ::1 at 2019-07-18 20:17:19 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (2.3ms)
+  Rendered shared/_side-header.html.haml (3.7ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:7
+  Rendered shared/_group.html.haml (1.9ms)
+  Rendered shared/_group.html.haml (0.1ms)
+  Rendered messages/_main-header.html.haml (3.1ms)
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  Rendered messages/_message.html.haml (2.6ms)
+  Rendered messages/_message.html.haml (0.1ms)
+  Rendered messages/_message.html.haml (0.1ms)
+  Rendered messages/index.html.haml within layouts/application (34.9ms)
+Completed 200 OK in 65ms (Views: 56.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/groups/2/messages" for ::1 at 2019-07-18 20:17:22 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (2.0ms)
+  Rendered shared/_side-header.html.haml (3.7ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:7
+  Rendered shared/_group.html.haml (2.4ms)
+  Rendered shared/_group.html.haml (0.2ms)
+  Rendered messages/_main-header.html.haml (5.8ms)
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 2[0m
+  ↳ app/views/messages/index.html.haml:15
+  Rendered messages/index.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 63ms (Views: 57.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups/1/messages" for ::1 at 2019-07-18 20:17:25 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (2.4ms)
+  Rendered shared/_side-header.html.haml (3.3ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:7
+  Rendered shared/_group.html.haml (3.4ms)
+  Rendered shared/_group.html.haml (0.2ms)
+  Rendered messages/_main-header.html.haml (3.6ms)
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  Rendered messages/_message.html.haml (3.8ms)
+  Rendered messages/_message.html.haml (0.1ms)
+  Rendered messages/_message.html.haml (0.1ms)
+  Rendered messages/index.html.haml within layouts/application (39.9ms)
+Completed 200 OK in 71ms (Views: 62.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/groups/1/messages" for ::1 at 2019-07-18 21:02:03 +0900
+  [1m[35m (9.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.6ms)
+  Rendered shared/_side-header.html.haml (4.5ms)
+  [1m[36mGroup Load (3.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:7
+  Rendered shared/_group.html.haml (3.1ms)
+  Rendered shared/_group.html.haml (0.1ms)
+  Rendered messages/_main-header.html.haml (4.6ms)
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  Rendered messages/_message.html.haml (4.9ms)
+  Rendered messages/_message.html.haml (0.2ms)
+  Rendered messages/_message.html.haml (0.6ms)
+  Rendered messages/index.html.haml within layouts/application (85.3ms)
+Completed 200 OK in 494ms (Views: 390.3ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/groups/1/messages" for ::1 at 2019-07-18 21:04:17 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.3ms)
+  Rendered shared/_side-header.html.haml (2.9ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:7
+  Rendered shared/_group.html.haml (2.2ms)
+  Rendered shared/_group.html.haml (0.2ms)
+  Rendered messages/_main-header.html.haml (2.7ms)
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  Rendered messages/_message.html.haml (3.1ms)
+  Rendered messages/_message.html.haml (0.2ms)
+  Rendered messages/_message.html.haml (0.3ms)
+  Rendered messages/index.html.haml within layouts/application (32.8ms)
+Completed 200 OK in 57ms (Views: 49.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/groups/1/messages" for ::1 at 2019-07-18 21:06:18 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.3ms)
+  Rendered shared/_side-header.html.haml (2.7ms)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:7
+  Rendered shared/_group.html.haml (2.2ms)
+  Rendered shared/_group.html.haml (0.2ms)
+  Rendered messages/_main-header.html.haml (2.8ms)
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  Rendered messages/_message.html.haml (2.7ms)
+  Rendered messages/_message.html.haml (0.2ms)
+  Rendered messages/_message.html.haml (0.4ms)
+  Rendered messages/index.html.haml within layouts/application (31.4ms)
+Completed 200 OK in 56ms (Views: 49.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/groups/1/messages" for ::1 at 2019-07-18 21:14:16 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.3ms)
+  Rendered shared/_side-header.html.haml (3.9ms)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:7
+  Rendered shared/_group.html.haml (1.6ms)
+  Rendered shared/_group.html.haml (0.1ms)
+  Rendered messages/_main-header.html.haml (2.5ms)
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  Rendered messages/_message.html.haml (2.5ms)
+  Rendered messages/_message.html.haml (0.3ms)
+  Rendered messages/_message.html.haml (0.7ms)
+  Rendered messages/index.html.haml within layouts/application (38.1ms)
+Completed 200 OK in 92ms (Views: 52.5ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/groups/1/messages" for ::1 at 2019-07-18 21:14:18 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"group_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:27
+  Rendering messages/index.html.haml within layouts/application
+  Rendered shared/_flash.html.haml (1.2ms)
+  Rendered shared/_side-header.html.haml (2.4ms)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` INNER JOIN `group_users` ON `groups`.`id` = `group_users`.`group_id` WHERE `group_users`.`user_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:7
+  Rendered shared/_group.html.haml (1.9ms)
+  Rendered shared/_group.html.haml (0.2ms)
+  Rendered messages/_main-header.html.haml (2.6ms)
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ app/views/messages/index.html.haml:15
+  Rendered messages/_message.html.haml (2.4ms)
+  Rendered messages/_message.html.haml (0.4ms)
+  Rendered messages/_message.html.haml (0.4ms)
+  Rendered messages/index.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 54ms (Views: 48.2ms | ActiveRecord: 1.5ms)
+
+

@@ -2,5 +2,8 @@
   .upper-info
     %p.upper-info__user=message.user.name
     %p.upper-info__date=message.created_at
-  
-  %p.message__text message
+ 
+  - if message.text.present?
+    %p.message__text=message.text
+    
+  %p.message__text=image_tag message.image.url if message.image.present?
