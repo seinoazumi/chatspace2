@@ -70,6 +70,7 @@
       background: #fafafa;
       padding: 40px;
       height: calc(100% - 184px);
+      overflow: scroll;
       .message{
         margin-top: 40px;
         &:first-child{

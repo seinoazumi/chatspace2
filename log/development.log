@@ -9528,5 +9528,3 @@ Processing by GroupsController#edit as HTML
   ↳ app/views/groups/edit.html.haml:32
   Rendered groups/edit.html.haml within layouts/application (149.5ms)
 Completed 200 OK in 531ms (Views: 463.7ms | ActiveRecord: 27.4ms)
-
-
