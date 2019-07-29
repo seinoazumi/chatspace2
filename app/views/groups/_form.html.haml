@@ -1,0 +1,23 @@
+=form_with model: @group, id: "edit_chat_group", class: ".edit_chat_group", local: true do |f|
+  -if @group.errors.any?
+    .chat-group-form__errors
+      %h2="#{@group.errors.full_messages.count}件のエラーが発生しました"
+      %ul
+        - @group.errors.full_messages.each do |message|
+          %li= message
+  .chat-group-form__field.clearfix
+    .chat-group-form__field--left
+      =f.label :chat_group_name, 'グループ名', class: "chat-group-form__label"
+    .chat-group-form__field--right
+      =f.text_field :name, id: "chat_group_name", class: "chat-group-form__input", placeholder: "グループ名を入力してください"
+  .chat-group-form__field.clearfix
+    .chat-group-form__field--left
+      =f.label :search, 'チャットメンバーを追加', class: "chat-group-form__label"
+    .chat-group-form__field--right
+      .chat-group-form__search.clearfix
+        =f.text_field :search, class:'chat-group-form__input', id:'user-search-field', placeholder:'追加したいユーザー名を入力してください'
+
+  .chat-group-form__field.clearfix
+    .chat-group-form__field--left
+    .chat-group-form__field--right
+      =f.submit 'Save', class: 'chat-group-form__action-btn'
