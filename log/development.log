@@ -9528,3 +9528,148 @@ Processing by GroupsController#edit as HTML
   ↳ app/views/groups/edit.html.haml:32
   Rendered groups/edit.html.haml within layouts/application (149.5ms)
 Completed 200 OK in 531ms (Views: 463.7ms | ActiveRecord: 27.4ms)
+Started GET "/groups/1/edit" for ::1 at 2019-07-28 20:32:52 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:42
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/groups/edit.html.haml:31
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `users`.`id` FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/groups/edit.html.haml:32
+  Rendered groups/edit.html.haml within layouts/application (172.8ms)
+Completed 200 OK in 547ms (Views: 493.7ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/groups/1/edit" for ::1 at 2019-07-28 21:11:26 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:42
+  Rendering groups/edit.html.haml within layouts/application
+  Rendered groups/edit.html.haml within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/azumi/projects/chatspace2/app/views/groups/edit.html.haml:17: syntax error, unexpected tSTRING_BEG, expecting ')'
+...(((f.label :group[user_ids][] 'チャットメンバーを...
+...                               ^
+/Users/azumi/projects/chatspace2/app/views/groups/edit.html.haml:17: syntax error, unexpected ',', expecting ')'
+...ャットメンバーを追加', class: "chat-group-form__lab...
+...                                ^
+/Users/azumi/projects/chatspace2/app/views/groups/edit.html.haml:20: syntax error, unexpected keyword_class, expecting ')'
+....input :group[user_ids][] class:'chat-group-form__input', id...
+...                               ^
+/Users/azumi/projects/chatspace2/app/views/groups/edit.html.haml:20: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...class:'chat-group-form__input', id:'user-search-field', plac...
+...                               ^
+/Users/azumi/projects/chatspace2/app/views/groups/edit.html.haml:20: syntax error, unexpected ',', expecting ')'
+...input', id:'user-search-field', placeholder:'追加したい...
+...                               ^):
+  
+app/views/groups/edit.html.haml:17: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/groups/edit.html.haml:17: syntax error, unexpected ',', expecting ')'
+app/views/groups/edit.html.haml:20: syntax error, unexpected keyword_class, expecting ')'
+app/views/groups/edit.html.haml:20: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+app/views/groups/edit.html.haml:20: syntax error, unexpected ',', expecting ')'
+Started GET "/groups/1/edit" for ::1 at 2019-07-28 21:12:26 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:42
+  Rendering groups/edit.html.haml within layouts/application
+  Rendered groups/edit.html.haml within layouts/application (349.9ms)
+Completed 500 Internal Server Error in 362ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_ids' for #<#<Class:0x007f876ad10008>:0x007f876af23958>
+Did you mean?  user_session):
+    14:         =f.text_field :name, id: "chat_group_name", class: "chat-group-form__input", placeholder: "グループ名を入力してください"
+    15:     .chat-group-form__field.clearfix
+    16:       .chat-group-form__field--left
+    17:         =f.label :group[user_ids][], 'チャットメンバーを追加', class: "chat-group-form__label"
+    18:       .chat-group-form__field--right
+    19:         .chat-group-form__search.clearfix
+    20:           =f.input :group[user_ids][], class:'chat-group-form__input', id:'user-search-field', placeholder:'追加したいユーザー名を入力してください'
+  
+app/views/groups/edit.html.haml:17:in `block in _app_views_groups_edit_html_haml__3747708576697427314_70109795821880'
+app/views/groups/edit.html.haml:3:in `_app_views_groups_edit_html_haml__3747708576697427314_70109795821880'
+Started GET "/groups/1/edit" for ::1 at 2019-07-28 21:17:41 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:42
+  Rendering groups/edit.html.haml within layouts/application
+  Rendered groups/edit.html.haml within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for :group:Symbol):
+    14:         =f.text_field :name, id: "chat_group_name", class: "chat-group-form__input", placeholder: "グループ名を入力してください"
+    15:     .chat-group-form__field.clearfix
+    16:       .chat-group-form__field--left
+    17:         =f.label :group.user_id, 'チャットメンバーを追加', class: "chat-group-form__label"
+    18:       .chat-group-form__field--right
+    19:         .chat-group-form__search.clearfix
+    20:           =f.input :group.user_id, class:'chat-group-form__input', id:'user-search-field', placeholder:'追加したいユーザー名を入力してください'
+  
+app/views/groups/edit.html.haml:17:in `block in _app_views_groups_edit_html_haml__3747708576697427314_70109749678400'
+app/views/groups/edit.html.haml:3:in `_app_views_groups_edit_html_haml__3747708576697427314_70109749678400'
+Started GET "/groups/1/edit" for ::1 at 2019-07-28 21:19:55 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:42
+  Rendering groups/edit.html.haml within layouts/application
+  Rendered groups/edit.html.haml within layouts/application (149.9ms)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x007f8770a60280>):
+    17:         =f.label :user_ids, 'チャットメンバーを追加', class: "chat-group-form__label"
+    18:       .chat-group-form__field--right
+    19:         .chat-group-form__search.clearfix
+    20:           =f.input :user_ids, class:'chat-group-form__input', id:'user-search-field', placeholder:'追加したいユーザー名を入力してください'
+    21: 
+    22:     -# .chat-group-form__field.clearfix
+    23:     -#   .chat-group-form__field--left
+  
+app/views/groups/edit.html.haml:20:in `block in _app_views_groups_edit_html_haml__3747708576697427314_70109834236480'
+app/views/groups/edit.html.haml:3:in `_app_views_groups_edit_html_haml__3747708576697427314_70109834236480'
+Started GET "/groups/1/edit" for ::1 at 2019-07-28 21:20:19 +0900
+Processing by GroupsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /Users/azumi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/groups_controller.rb:42
+  Rendering groups/edit.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `users`.`id` FROM `users` INNER JOIN `group_users` ON `users`.`id` = `group_users`.`user_id` WHERE `group_users`.`group_id` = 1[0m
+  ↳ app/views/groups/edit.html.haml:20
+  Rendered groups/edit.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 0.9ms)
+
+
