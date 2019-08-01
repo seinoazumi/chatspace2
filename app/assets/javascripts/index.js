@@ -31,9 +31,11 @@ $(document).on('turbolinks:load', function(){
       dataType: 'json'
     })
     .done(function(users){
+      //usersがdataに当たる内容
       if(users.length !== 0){
         if(input.length !==0){
           users.forEach(function(user){
+            //dataは配列形式で帰ってくるので、forEachで処理
             if (user.name.match(reg)) {
               $(appendUser(user));
             }; 
